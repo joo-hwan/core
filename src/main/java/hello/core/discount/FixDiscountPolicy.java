@@ -1,8 +1,11 @@
 package hello.core.discount;
 
+import hello.core.annotation.MainDiscountPolicy;
 import hello.core.member.Grade;
 import hello.core.member.Member;
+import org.springframework.context.annotation.Primary;
 
+//@MainDiscountPolicy
 public class FixDiscountPolicy implements DiscountPolicy {
 
     private int discountFixAmount = 1000;
